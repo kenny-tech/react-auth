@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Card, Form, Button, Container } from "react-bootstrap";
+import axios from "axios";
+import swal from "sweetalert";
 
 import FormPics from './FormPics';
 
