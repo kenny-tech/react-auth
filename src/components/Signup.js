@@ -3,19 +3,19 @@ import { Row, Col, Card, Form, Button, Container } from "react-bootstrap";
 
 import FormPics from './FormPics';
 
-const Register = () => {
+const Signup = () => {
     return (
         <Container className="mt-5">
             <Row>
                 <Col md={6}>
-                    <FormPics buttonText="SIGN IN"/>
+                    <FormPics buttonText="SIGN IN" link="/signin"/>
                 </Col>
                 <Col md={6}>
-                    <Card class="card mb-4 border-0">
+                    <Card class="card mb-4 border-0" style={{ width: '550px', height: '385px' }}>
                         <Card.Body>
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Label>FULL NAME </Form.Label>
+                                    <Form.Label className="small">FULL NAME </Form.Label>
                                     <Form.Control type="email" placeholder="Enter your full name" />
                                 </Form.Group>
                                 <Form.Group controlId="formBasicEmail">
@@ -39,4 +39,4 @@ const Register = () => {
     )
 }
 
-export default Register;    
+export default Signup;    
