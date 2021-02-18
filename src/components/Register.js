@@ -8,7 +8,7 @@ const Register = () => {
         <Container className="mt-5">
             <Row>
                 <Col md={6}>
-                    <FormPics button="SIGN IN"/>
+                    <FormPics buttonText="SIGN IN"/>
                 </Col>
                 <Col md={6}>
                     <Card class="card mb-4 border-0">
