@@ -48,17 +48,17 @@ const Signup = () => {
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>FULL NAME </Form.Label>
                                     <Form.Control type="text" name="name" onChange={e => setName(e.target.value)} placeholder="Enter your full name" />
-                                    {isSubmitted && name=='' && <span class="text-danger">Full Name is required</span>}
+                                    {isSubmitted && name==='' && <span class="text-danger">Full Name is required</span>}
                                 </Form.Group>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>EMAIL ADDRESS</Form.Label>
                                     <Form.Control type="email" name="email" onChange={e => setEmail(e.target.value)} placeholder="Enter your email" />
-                                    {isSubmitted && email=='' && <span class="text-danger">Email is required</span>}
+                                    {isSubmitted && email==='' && <span class="text-danger">Email is required</span>}
                                 </Form.Group>
                                 <Form.Group controlId="formBasicPassword">
                                     <Form.Label>PASSWORD</Form.Label>
                                     <Form.Control type="password" name="password" onChange={e => setPassword(e.target.value)} placeholder="Enter your password" />
-                                    {isSubmitted && password=='' && <span class="text-danger">Password is required</span>}
+                                    {isSubmitted && password==='' && <span class="text-danger">Password is required</span>}
                                 </Form.Group>
                                 {
                                     name !== '' && email !== '' && password !== '' ? (                                <Button variant="success btn-block" type="submit">

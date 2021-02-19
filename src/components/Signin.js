@@ -45,12 +45,12 @@ const Signin = () => {
                                <Form.Group controlId="formBasicEmail">
                                     <Form.Label>EMAIL ADDRESS</Form.Label>
                                     <Form.Control type="email" onChange={e => setEmail(e.target.value)} placeholder="Enter your email" />
-                                    {isSubmitted && email=='' && <span class="text-danger">Email is required</span>}
+                                    {isSubmitted && email==='' && <span class="text-danger">Email is required</span>}
                                 </Form.Group>
                                 <Form.Group controlId="formBasicPassword">
                                     <Form.Label>PASSWORD</Form.Label>
                                     <Form.Control type="password" onChange={e => setPassword(e.target.value)} placeholder="Enter your password" />
-                                    {isSubmitted && password=='' && <span class="text-danger">Password is required</span>}
+                                    {isSubmitted && password==='' && <span class="text-danger">Password is required</span>}
                                 </Form.Group>
                                 <Button variant="success btn-block" type="submit">
                                     SIGN IN
